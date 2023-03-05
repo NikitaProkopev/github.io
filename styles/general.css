@@ -1,0 +1,32 @@
+* {
+    font-family: 'Futura PT';
+    color: var(--dark-blue);
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --light-gray: #F7F8FA;
+    --border-light-gray: #D6DBEB;
+    --dark-blue: #051443;
+}
+
+.mobile {
+    display: none;
+}
+
+.default-colored-button {
+    background-color: var(--dark-blue);
+    color: white;
+    text-transform: uppercase;
+    border: none;
+}
+
+@media (max-width: 820px) {
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
+}
