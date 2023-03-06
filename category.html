@@ -13,11 +13,20 @@
 <body>
     <menu-component></menu-component>
     <section>
+        <div class="current-page desktop">
+            <button type="button" class="show_more">All</button>
+            <span>/</span>
+            <button type="button" class="show_more">Woman</button>
+            <span>/</span>
+            <button type="button" class="show_more1">Woman's Dresses</button>
+        </div>
+    </section>
+    <section>
         <div class="main">
             <div class="mainname">
                 <p>Woman’s Dresses</p>
             </div>
-            <div class="mainname2">
+            <div class="mainname2 desktop">
                 <p><span>Sort by:</span> Newest</p>
                 <div>
                     <img class="arrow" src="./assets/pictures/arrow02.svg">
@@ -29,125 +38,152 @@
         <div class="content">
             <div class="filter">
                 <div class="desktop">
-                    <div class="category-title">
-                        <p>Category</p>
+                    <div class="selected-filters-wrapper">
+                        <div class="selected-filter">
+                            <span>Bloomingdales</span>
+                            <button></button>
+                        </div>
+                        <div class="selected-filter">
+                            <span>Blue</span>
+                            <button></button>
+                        </div>
+                        <div class="selected-filter">
+                            <span>Bergdorf Goodman</span>
+                            <button></button>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="category-title">
+                            <p>Category</p>
+                            <div>
+                                <img class="arrow" src="./assets/pictures/arrow02.svg">
+                            </div>
+                        </div>
+                        <div class="category-content">
+                            <div class="category-item">
+                                <p class="item-name">Accessories</p>
+                                <p class="item-value">10k</p>
+                            </div>
+                            <div class="category-item">
+                                <p class="item-name">Bags</p>
+                                <p class="item-value">6k</p>
+                            </div>
+                            <div class="category-item">
+                                <p class="item-name">Clothing</p>
+                                <p class="item-value">151k</p>
+                            </div>
+                            <div class="category-item">
+                                <p class="item-name">Men’s Grooming</p>
+                                <p class="item-value">118</p>
+                            </div>
+                            <div class="category-item">
+                                <p class="item-name">Shoes</p>
+                                <p class="item-value">7k</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="brands-filter">
+                            <p>Brands</p>
+                            <div>
+                                <img class="arrow" src="./assets/pictures/arrow02.svg">
+                            </div>
+                        </div>
                         <div>
-                            <img class="arrow" src="./assets/pictures/arrow02.svg">
+                            <div class="search-wrapper">
+                                <img src="./assets/pictures/search.svg" alt="logo image" class="search-img">
+                                <input type="text" class="search-input" placeholder="Search brand" />
+                            </div>
+                            <div class="brands-items">
+                                <div class="category-item">
+                                    <p class="item-name">ASOS Curve</p>
+                                    <p class="item-value">407</p>
+                                </div>
+                                <div class="category-item">
+                                    <p class="item-name">ASOS DESIGN</p>
+                                    <p class="item-value">7k</p>
+                                </div>
+                                <div class="category-item">
+                                    <p class="item-name">Adidas</p>
+                                    <p class="item-value">1k</p>
+                                </div>
+                                <div class="category-item">
+                                    <p class="item-name">Alexander McQueen</p>
+                                    <p class="item-value">2k</p>
+                                </div>
+                                <div class="category-item">
+                                    <p class="item-name">Balenciaga</p>
+                                    <p class="item-value">1k</p>
+                                </div>
+                                <div class="category-item">
+                                    <p class="item-name">Balmain</p>
+                                    <p class="item-value">1k</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="category-content">
-                        <div class="category-item">
-                            <p class="item-name">Accessories</p>
-                            <p class="item-value">10k</p>
+                    <div class="filter-item">
+                        <div class="colors-title">
+                            <p>Colors</p>
+                            <div>
+                                <img class="arrow" src="./assets/pictures/arrow02.svg">
+                            </div>
                         </div>
-                        <div class="category-item">
-                            <p class="item-name">Bags</p>
-                            <p class="item-value">6k</p>
+                        <div class="product-colors" id="product-colors"></div>
+                    </div>
+                    <div class="filter-item">
+                        <div class="stories-title">
+                            <p>Stories</p>
+                            <div>
+                                <img class="arrow" src="./assets/pictures/arrow02.svg">
+                            </div>
                         </div>
-                        <div class="category-item">
-                            <p class="item-name">Clothing</p>
-                            <p class="item-value">151k</p>
-                        </div>
-                        <div class="category-item">
-                            <p class="item-name">Men’s Grooming</p>
-                            <p class="item-value">118</p>
-                        </div>
-                        <div class="category-item">
-                            <p class="item-name">Shoes</p>
-                            <p class="item-value">7k</p>
+                        <div class="stories-list">
+                            <div class="filter-checkbox-wrapper">
+                                <label class="filter-label"> 24S Worldwide
+                                    <input class="filter-checkbox" type="checkbox">
+                                    <span class="filter-custom-checkbox"></span>
+                                </label>
+                            </div>
+                            <div class="filter-checkbox-wrapper">
+                                <label class="filter-label"> Adidas
+                                    <input class="filter-checkbox" type="checkbox">
+                                    <span class="filter-custom-checkbox"></span>
+                                </label>
+                            </div>
+                            <div class="filter-checkbox-wrapper">
+                                <label class="filter-label"> Bergdorf Goodman
+                                    <input class="filter-checkbox" type="checkbox">
+                                    <span class="filter-custom-checkbox"></span>
+                                </label>
+                            </div>
+                            <div class="filter-checkbox-wrapper">
+                                <label class="filter-label"> ASOS
+                                    <input class="filter-checkbox" type="checkbox">
+                                    <span class="filter-custom-checkbox"></span>
+                                </label>
+                            </div>
+                            <div class="filter-checkbox-wrapper">
+                                <label class="filter-label"> Bloomingdales
+                                    <input class="filter-checkbox" type="checkbox">
+                                    <span class="filter-custom-checkbox"></span>
+                                </label>
+                            </div>
                         </div>
                     </div>
-                    <div class="brands-filter">
-                        <p>Brands</p>
-                        <div>
-                            <img class="arrow" src="./assets/pictures/arrow02.svg">
+                    <div class="filter-item">
+                        <div class="prices-title">
+                            <p>Price</p>
+                            <div>
+                                <img class="arrow" src="./assets/pictures/arrow02.svg">
+                            </div>
                         </div>
-                    </div>
-                    <div class="search-wrapper">
-                        <img src="./assets/pictures/search.svg" alt="logo image" class="search-img">
-                        <input type="text" class="search-input" placeholder="Search brand" />
-                    </div>
-                    <div class="brands-items">
-                        <div class="category-item">
-                            <p class="item-name">ASOS Curve</p>
-                            <p class="item-value">407</p>
+                        <div class="price">
+                            <input type="text" placeholder="Min">
+                            <span> - </span>
+                            <input type="text" placeholder="Max">
+                            <button class="default-colored-button">set</button>
                         </div>
-                        <div class="category-item">
-                            <p class="item-name">ASOS DESIGN</p>
-                            <p class="item-value">7k</p>
-                        </div>
-                        <div class="category-item">
-                            <p class="item-name">Adidas</p>
-                            <p class="item-value">1k</p>
-                        </div>
-                        <div class="category-item">
-                            <p class="item-name">Alexander McQueen</p>
-                            <p class="item-value">2k</p>
-                        </div>
-                        <div class="category-item">
-                            <p class="item-name">Balenciaga</p>
-                            <p class="item-value">1k</p>
-                        </div>
-                        <div class="category-item">
-                            <p class="item-name">Balmain</p>
-                            <p class="item-value">1k</p>
-                        </div>
-                    </div>
-                    <div class="colors-title">
-                        <p>Colors</p>
-                        <div>
-                            <img class="arrow" src="./assets/pictures/arrow02.svg">
-                        </div>
-                    </div>
-                    <div class="product-colors" id="product-colors"></div>
-                    <div class="stories-title">
-                        <p>Stories</p>
-                        <div>
-                            <img class="arrow" src="./assets/pictures/arrow02.svg">
-                        </div>
-                    </div>
-                    <div>
-                        <div class="filter-checkbox-wrapper">
-                            <label class="filter-label"> 24S Worldwide
-                                <input class="filter-checkbox" type="checkbox">
-                                <span class="filter-custom-checkbox"></span>
-                            </label>
-                        </div>
-                        <div class="filter-checkbox-wrapper">
-                            <label class="filter-label"> Adidas
-                                <input class="filter-checkbox" type="checkbox">
-                                <span class="filter-custom-checkbox"></span>
-                            </label>
-                        </div>
-                        <div class="filter-checkbox-wrapper">
-                            <label class="filter-label"> Bergdorf Goodman
-                                <input class="filter-checkbox" type="checkbox">
-                                <span class="filter-custom-checkbox"></span>
-                            </label>
-                        </div>
-                        <div class="filter-checkbox-wrapper">
-                            <label class="filter-label"> ASOS
-                                <input class="filter-checkbox" type="checkbox">
-                                <span class="filter-custom-checkbox"></span>
-                            </label>
-                        </div>
-                        <div class="filter-checkbox-wrapper">
-                            <label class="filter-label"> Bloomingdales
-                                <input class="filter-checkbox" type="checkbox">
-                                <span class="filter-custom-checkbox"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="prices-title">
-                        <p>Price</p>
-                        <div>
-                            <img class="arrow" src="./assets/pictures/arrow02.svg">
-                        </div>
-                    </div>
-                    <div class="price">
-                        <input type="text" placeholder="Min"><span> - </span>
-                        <input type="text" placeholder="Max">
-                        <button class="default-colored-button">set</button>
                     </div>
                 </div>
                 <div class="mobile">
@@ -335,6 +371,6 @@
 </body>
 <script type="text/javascript" src="scripts/menu-component.js"></script>
 <script type="text/javascript" src="scripts/footer-component.js"></script>
-<script type="text/javascript" src="scripts/script.js"></script>
 <script type="text/javascript" src="scripts/generate-colors.js"></script>
+<script type="text/javascript" src="scripts/filter.js"></script>
 </html>

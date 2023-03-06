@@ -11,17 +11,40 @@ function generateColors(id, colorsArray) {
     console.log(container)
 
     colorsArray.forEach((color) => {
+        const colorDiv = document.createElement('div');
+        colorDiv.className = 'color-type-wrapper';
         const colorWrapper = document.createElement('div');
         colorWrapper.className = 'color-type';
 
         const coloredBlock = document.createElement('div');
         coloredBlock.style.backgroundColor = color;
 
-        colorWrapper.appendChild(coloredBlock);
 
-        container.appendChild(colorWrapper);
+        colorWrapper.appendChild(coloredBlock);
+        colorDiv.appendChild(colorWrapper);
+        container.appendChild(colorDiv);
     });
     setBorderToItemsSelection('color-type', 7);
+}
+
+function setBorderToItemsSelection(className, startIndex) {
+    let blocks = document.getElementsByClassName(className);
+    if (blocks && blocks.length) {
+        blocks[startIndex ? startIndex : 0].style.outline = '1px solid black';
+        blocks[startIndex ? startIndex : 0].style.outlineOffset = '-1px';
+
+        for (const block of blocks) {
+            block.addEventListener('click', (event) => {
+                if (!block.style.outline) {
+                    block.style.outline = '1px solid black';
+                    block.style.outlineOffset = '-1px';
+                } else {
+                    block.style.outline = '';
+                    block.style.outlineOffset = '';
+                }
+            })
+        }
+    }
 }
 
 generateColors('product-colors', colors);
