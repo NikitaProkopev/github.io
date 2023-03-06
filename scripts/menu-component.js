@@ -48,7 +48,7 @@ class MenuComponent extends HTMLElement {
                         <div class="logo-wrapper">
                             <img src="./assets/pictures/logo.svg" alt="logo image" class="menu-logo">
                         </div>
-                        <img src="../assets/pictures/bag.svg" alt="bag image">
+                        <img src="./assets/pictures/bag.svg" alt="bag image">
                     </div>
                     <div class="mobile-menu-search">
                         <div class="menu-search-wrapper">

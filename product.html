@@ -3,9 +3,9 @@
 <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=0.25">
     <title>Title</title>
+    <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="./styles/product.css">
     <link rel="stylesheet" href="styles/fonts.css">
-    <link rel="stylesheet" href="styles/general.css">
     <link rel="stylesheet" href="styles/menu.css">
     <link rel="stylesheet" href="styles/footer.css">
 </head>
@@ -25,15 +25,22 @@
     </div>
 </section>
 <section>
-    <div class="grid">
-        <div class="selector-picture-wrapper">
+    <div class="content">
+        <div class="selector-picture-wrapper desktop">
             <img class="img-select" src="./assets/img/1.png">
             <img class="img-select" src="./assets/img/2.png">
             <img class="img-select" src="./assets/img/3.png">
             <img class="img-select" src="./assets/img/4.png">
         </div>
         <div class="main-img">
-            <img class="img-main" src="./assets/img/main-img.png">
+            <img class="img-main desktop" src="./assets/img/main-img.png">
+            <div class="mobile mobile-slider">
+                <img src="./assets/img/main-img.png">
+                <img src="./assets/img/1.png">
+                <img src="./assets/img/2.png">
+                <img src="./assets/img/3.png">
+                <img src="./assets/img/4.png">
+            </div>
         </div>
         <div class="description">
             <p class="short-name">Vibi Venezia</p>
@@ -42,7 +49,7 @@
                 <p class="cost">$100.00 USD</p>
                 <button class="discount default-colored-button"> Get 5% Cash Back</button>
             </div>
-            <div class="text05">
+            <div class="product-description">
                 <p>For the latest stock status, size availability and promotions please check directly with <span>Bergdorf Goodman</span></p>
             </div>
             <div>
@@ -65,23 +72,23 @@
 
             <div class="chose-size">
                     <p>Missing your Size? Click here</p>
-                    <div class="grid3">
+                    <div>
                         <select class="size-select" name="size" id="size">
                             <option value="39">39</option>
                         </select>
                     </div>
                 </div>
-                <div class="text08">
+                <div class="discount-text">
                     <p>Best price + 5% cash back: </p>
                 </div>
                    <div>
-                    <button class="block">
+                    <button class="shop-now">
                             <p class="uppercase action">shop now</p>
                         </button>
                    </div>
                     <div>
-                        <button class="block2">
-                            <div class="block2-inner-wrapper">
+                        <button class="price-alert">
+                            <div class="price-alert-inner-wrapper">
                                 <div>
                                     <img src="./assets/pictures/bell 1.svg">
                                 </div>
@@ -89,32 +96,30 @@
                             </div>
                         </button>
                     </div>
-                    <div class="block3">
+                    <div class="or-block">
                         <p>OR</p>
                     </div>
-                    <div class="block4">
+                    <div>
                         <button class="default-colored-button add-to-cart">add to cart</button>
                         <div class="shopping-concierge">
                             <h3>SHOPPING CONCIERGE:</h3>
                             <p>One click shopping across hundreds of stores. Add the items you wish to buy and let us handle the rest. Learn more</p>
                         </div>
                     </div>
-                    <div class="block5">
-                    </div>
-                <div class="block6">
-                    <div class="block6-inner-wrapper">
+                <div class="product-description-hide">
+                    <div class="product-description-hide-inner-wrapper">
                     <p>Product Description</p>
                     <div>
                         <img src="./assets/pictures/arrow02.svg">
                     </div>
                     </div>
                 </div>
-                <div class="block7">
-                    <div class="block7-inner-wrapper">
-                    <p>Shipping & Returns</p>
+                <div class="shopping-and-returns">
                     <div>
-                        <img src="./assets/pictures/arrow02.svg">
-                    </div>
+                        <p>Shipping & Returns</p>
+                        <div>
+                            <img src="./assets/pictures/arrow02.svg">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -122,42 +127,41 @@
     </section>
     <section>
         <div class="across-title">
-            <p class="p1"><span>Compare Across 500+ Stores&nbsp;</span>(2 Stores)</p>
+            <p class="across-header"><span>Compare Across 500+ Stores&nbsp;</span>(2 Stores)</p>
             <p class="across-diapason">$390 - $450</p>
         </div>
         <div class="compare-across-variant">
             <div class="across-variant-container">
                 <div>
-                    <img class="img_grid_bag1" src="./assets/img/bagg1.png">
+                    <img class="across-variant-img" src="./assets/img/bagg1.png">
                 </div>
-                <div class="block_g_1">
-                <p class="pgrid1">(WMNS) Nike Dunk Low 'Black White' DD1503-101</p>
-                <p class="pgrid2">$399.00 USD</p>
+                <div class="across-variant-description">
+                    <p class="across-variant-description-text">(WMNS) Nike Dunk Low 'Black White' DD1503-101</p>
+                    <p class="across-variant-description-price">$399.00 USD</p>
                 </div>
             </div>
             <div class="across-variant-button-wrapper">
-                <button class="pgrid3">
+                <button class="visit-store">
                     <p class="uppercase action white-color">visit store</p>
                 </button>
             </div>
 
         </div>
         <div class="compare-across-variant">
-            <div>
+            <div class="across-variant-container">
                 <div class="across-variant-container">
-                    <img class="img_grid_bag1" src="./assets/img/bagg2.png">
-                    <div class="block_g_1">
-                        <p class="pgrid1">(WMNS) Nike Dunk Low 'Black White' DD1503-101</p>
-                        <p class="pgrid2">$399.00 USD</p>
+                    <div>
+                        <img class="across-variant-img" src="./assets/img/bagg2.png">
+                    </div>
+                    <div class="across-variant-description">
+                        <p class="across-variant-description-text">(WMNS) Nike Dunk Low 'Black White' DD1503-101</p>
+                        <p class="across-variant-description-price">$399.00 USD</p>
                     </div>
                 </div>
             </div>
             <div class="across-variant-button-wrapper">
-                <button class="pgrid3">
-                    <div class="pgrid3-inner-wrapper">
-                        <p class="uppercase action white-color">VISIT STORE</p>
-                    </div>
-
+                <button class="visit-store">
+                    <p class="uppercase action white-color">VISIT STORE</p>
                 </button>
             </div>
 
