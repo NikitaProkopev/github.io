@@ -125,22 +125,6 @@ section {
     background-color: #E8D6B5;
 }
 
-.color-type {
-    height: 32px;
-    width: 32px;
-    border-radius: 30px;
-    border: 1px solid white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.color-type > div {
-    height: 28px;
-    width: 28px;
-    border-radius: 28px;
-}
-
 .current-product-color {
     margin-bottom: 12px;
 }
